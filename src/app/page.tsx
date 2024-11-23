@@ -8,6 +8,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { benefits, posts, processSteps, quickActions } from '@/data/mappings';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 
 const VirtualProPlatform: React.FC = () => {
@@ -22,7 +23,7 @@ const VirtualProPlatform: React.FC = () => {
             </div>
             <div className="text-center py-10 md:py-20">
               <h1 className="text-[30px] md:text-[44px] font-bold text-white mb-6">
-                Empowering Nigeria and Africa's Digital <br></br> Economy
+                Empowering Nigeria and Africa&apos;s Digital <br></br> Economy
               </h1>
               <p className="text-[16px] text-white/90 mb-8 ">
                 Driving the transformation to a digital economy with innovative cloud-based services and digital infrastructure.
@@ -45,7 +46,7 @@ const VirtualProPlatform: React.FC = () => {
                     <div className="text-sm text-[#98A2B3] text-[11px]">USER 5281 857K</div>
                   </div>
                   <div className="w-10 h-10 rounded-full overflow-hidden">
-                    <img
+                    <Image
                       src="/userImage.png"
                       alt="Profile"
                       width={40}
@@ -58,7 +59,7 @@ const VirtualProPlatform: React.FC = () => {
               <div className='border-b'></div>
               <div className='bg-[#FCFCFD] pt-6 px-4 sm:px-16'>
                 <div>
-                  <img
+                  <Image
                     src="/bluebg.png"
                     alt="Profile"
                     width={40}
@@ -123,7 +124,8 @@ const VirtualProPlatform: React.FC = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative bg-gray-100 rounded-lg overflow-hidden">
-              <img src="/laptoplady.png"
+              <Image
+                src="/laptoplady.png"
                 alt="Person using VirtualYou platform"
                 className="object-cover" />
             </div>
@@ -190,7 +192,7 @@ const VirtualProPlatform: React.FC = () => {
               <Card key={index} className="group hover:shadow-lg transition-shadow duration-200">
                 <CardContent className="p-0">
                   <div className="relative aspect-[2/1] bg-slate-900 overflow-hidden">
-                    <img
+                    <Image
                       src={post.image}
                       alt={post.title}
                       className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-200"

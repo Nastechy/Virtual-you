@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { Button } from './ui/button';
 import { X } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 interface NavbarProps {
     bg: string;
@@ -16,7 +18,11 @@ const Navbar: React.FC<NavbarProps> = ({ bg }) => {
     return (
         <div className={`${bg} rounded-full py-2 px-10 flex items-center justify-between`} style={{ backgroundImage: `url(${bg})` }}>
             <div className="flex items-center gap-2">
-                <img src="/logo.png" alt="Logo" width={104} height={50} />
+                <Image
+                    src="/logo.png"
+                    alt="Logo"
+                    width={104}
+                    height={50} />
             </div>
             <button className="lg:hidden text-white" onClick={toggleMenu}>
                 <span className="block w-6 h-0.5 bg-black mb-1"></span>
@@ -28,13 +34,21 @@ const Navbar: React.FC<NavbarProps> = ({ bg }) => {
                 <button onClick={toggleMenu} className="absolute flex items-center justify-center top-4 right-4 text-white">
                     <X className="w-4 h-4 text-black block md:hidden" />
                 </button>
-                <a href="/" className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">
-                    Home
-                </a>
-                <a href="/aboutUs" className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">About Us</a>
-                <a href="/contactUs" className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Our Services</a>
-                <a href="/contactUs" className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Contact Us</a>
-                <a href="#" className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Newsletter</a>
+                <Link href="/" passHref>
+                    <a className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Home</a>
+                </Link>
+                <Link href="/aboutUs" passHref>
+                    <a className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">About Us</a>
+                </Link>
+                <Link href="/" passHref>
+                    <a className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Our Services</a>
+                </Link>
+                <Link href="/contactUs" passHref>
+                    <a className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Contact Us</a>
+                </Link>
+                <Link href="/" passHref>
+                    <a className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Newsletter</a>
+                </Link>
                 <Button className="bg-[#FAC241] hover:bg-yellow-500 font-[600] text-[#333333] text-[16px] md:ml-4 sm:ml-0 rounded-[24px]">
                     Sign in
                 </Button>

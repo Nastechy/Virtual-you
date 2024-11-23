@@ -1,4 +1,4 @@
-import { ArrowRight, Facebook, Instagram, Leaf, Linkedin, MapPin, Search, Settings, Shield, Twitter, Youtube } from 'lucide-react';
+import { Search, Settings, Shield } from "lucide-react";
 
 export interface QuickAction {
   title: string;
@@ -21,7 +21,7 @@ export interface ProcessStep {
 
 export interface Benefit {
   title: string;
-  icon: React.ComponentType<any>;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   description: string;
 }
 

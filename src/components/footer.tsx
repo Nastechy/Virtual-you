@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect } from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'; // Import from react-icons
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'; 
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 
@@ -36,7 +36,10 @@ const Footer: React.FC = () => {
         <div className='border-b mb-8 border-white/60'></div>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-8">
           <p className="text-gray-200 text-sm leading-relaxed max-w-lg">
-            Our team helps buyers find the perfect home and sellers get the best value for their property. From expert advice to smooth negotiations, we're with you every step of the way.
+            Our team helps buyers find the perfect 
+            home and sellers get the best value for 
+            their property. From expert advice to smooth 
+            negotiations, we&apos;re with you every step of the way.
           </p>
           <div>
             <h3 className="text-gray-200 text-sm font-semibold mb-4">COMPANY</h3>

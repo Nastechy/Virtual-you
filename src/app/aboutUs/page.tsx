@@ -3,6 +3,7 @@ import Navbar from "@/components/navBar";
 import ServicesSection from "@/components/services";
 import { CardContent } from "@/components/ui/card";
 import { aboutus } from "@/data/mappings";
+import Image from "next/image";
 
 
 
@@ -63,7 +64,7 @@ const AboutUs: React.FC = () => {
                                 <div key={index} className="bg-[#FAFAFA] rounded-[12px]" >
                                     <CardContent className="p-6">
                                         <div className="flex justify-start mb-4">
-                                            <img
+                                            <Image
                                                 src={item.icon}
                                                 alt={item.title}
                                                 width={80}

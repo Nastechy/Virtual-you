@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardContent } from './ui/card';
 import { services } from '@/data/mappings';
+import Image from 'next/image';
 
 const ServicesSection: React.FC = () => {
     return (
@@ -23,7 +24,7 @@ const ServicesSection: React.FC = () => {
                             <CardContent className="p-6">
                                 <div className="mb-6">
                                     <div className="w-12 h-12 rounded-[8px] bg-[#FAFAFA] flex items-center justify-center mb-4">
-                                        <img
+                                        <Image
                                             src="/pen.png"
                                             alt="pen"
                                             width={30}
