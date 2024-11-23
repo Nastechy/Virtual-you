@@ -41,7 +41,7 @@ const VirtualProPlatform: React.FC = () => {
                 <h1 className="text-[#003490] text-[17px] font-bold">Virtual You</h1>
                 <div className="flex items-center gap-3">
                   <div className="text-right">
-                    <div className="font-[500] text-[12px]">Johnson Okoli</div>
+                    <div className="font-[500] text-[12px]">Brown Solomon</div>
                     <div className="text-sm text-[#98A2B3] text-[11px]">USER 5281 857K</div>
                   </div>
                   <div className="w-10 h-10 rounded-full overflow-hidden">
