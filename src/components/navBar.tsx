@@ -35,19 +35,19 @@ const Navbar: React.FC<NavbarProps> = ({ bg }) => {
                     <X className="w-4 h-4 text-black block md:hidden" />
                 </button>
                 <Link href="/" passHref>
-                    <a className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Home</a>
+                    <div className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Home</div>
                 </Link>
                 <Link href="/aboutUs" passHref>
-                    <a className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">About Us</a>
+                    <div className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">About Us</div>
                 </Link>
                 <Link href="/" passHref>
-                    <a className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Our Services</a>
+                    <div className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Our Services</div>
                 </Link>
                 <Link href="/contactUs" passHref>
-                    <a className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Contact Us</a>
+                    <div className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Contact Us</div>
                 </Link>
                 <Link href="/" passHref>
-                    <a className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Newsletter</a>
+                    <div className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Newsletter</div>
                 </Link>
                 <Button className="bg-[#FAC241] hover:bg-yellow-500 font-[600] text-[#333333] text-[16px] md:ml-4 sm:ml-0 rounded-[24px]">
                     Sign in
@@ -58,3 +58,10 @@ const Navbar: React.FC<NavbarProps> = ({ bg }) => {
 }
 
 export default Navbar;
+
+
+
+
+
+
+

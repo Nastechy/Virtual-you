@@ -1,9 +1,10 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navBar";
-import { MdLocationOn, MdMail, MdPhone } from "react-icons/md"; 
-import { FaYoutube, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa"; 
+import { MdLocationOn, MdMail, MdPhone } from "react-icons/md";
+import { FaYoutube, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
 
 const Contact: React.FC = () => {
     return (
@@ -49,6 +50,7 @@ const Contact: React.FC = () => {
                             />
                         </div>
                     </div>
+
                     <div className="bg-gray-50 p-8 rounded-lg space-y-6">
                         <div className="flex items-start gap-3">
                             <MdLocationOn className="w-5 h-5 text-emerald-800 mt-1" />
@@ -101,6 +103,9 @@ const Contact: React.FC = () => {
                         </div>
                     </div>
                 </div>
+                <Button className="bg-[#FAC241] mt-5 hover:bg-yellow-500 rounded-[30px] font-[600] text-[16px] text-[#333333]">
+                    Submit
+                </Button>
             </div>
 
             <div className='px-4 py-5'>

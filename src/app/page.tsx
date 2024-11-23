@@ -9,9 +9,22 @@ import { Input } from '@/components/ui/input';
 import { benefits, posts, processSteps, quickActions } from '@/data/mappings';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useRef } from 'react';
 
 
 const VirtualProPlatform: React.FC = () => {
+
+  const servicesRef = useRef<HTMLDivElement>(null);
+
+  const scrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
 
   return (
     <div>
@@ -29,12 +42,17 @@ const VirtualProPlatform: React.FC = () => {
                 Driving the transformation to a digital economy with innovative cloud-based services and digital infrastructure.
               </p>
               <div className="flex items-center justify-center gap-4 flex-col md:flex-row ">
-                <Button size="lg" className="bg-[#FAC241] font-[600] text-[16px] hover:bg-yellow-500 rounded-[24px] text-black">
+                <Button
+                  size="lg"
+                  onClick={scrollToServices}
+                  className="bg-[#FAC241] font-[600] text-[16px] hover:bg-yellow-500 rounded-[24px] text-black">
                   Explore Our Services
                 </Button>
-                <Button size="lg" variant="outline" className="bg-[#466A5E] font-[600] text-[16px] rounded-[24px] text-white hover:bg-white/10">
-                  Contact Us Today
-                </Button>
+                <Link href="/contactUs" passHref>
+                  <Button size="lg" variant="outline" className="bg-[#466A5E] font-[600] text-[16px] rounded-[24px] text-white hover:bg-white/10">
+                    Contact Us Today
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="max-w-5xl mx-auto bg-white rounded-t-[20px]">
@@ -111,11 +129,11 @@ const VirtualProPlatform: React.FC = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div ref={servicesRef}>
         <ServicesSection />
       </div>
       <div className="bg-white py-20">
-        <div className="container mx-auto max-w-6xl px-4">
+        <div className="container mx-auto max-w-7xl px-4">
           <div className="text-center mb-12">
             <span className="text-[#FAC241] font-[700] text-[18px] mb-4 block">How VirtualYou Works</span>
             <h2 className="text-2xl md:text-4xl font-bold text-[#466A5E] max-w-4xl mx-auto">
@@ -123,11 +141,13 @@ const VirtualProPlatform: React.FC = () => {
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative bg-gray-100 rounded-lg overflow-hidden">
+            <div className="relative bg-gray-100 rounded-lg overflow-hidden w-[100%] h-full">
               <Image
                 src="/laptoplady.png"
+                width={637}
+                height={542}
                 alt="Person using VirtualYou platform"
-                className="object-cover" />
+                />
             </div>
 
             <div className="space-y-6">
@@ -152,7 +172,7 @@ const VirtualProPlatform: React.FC = () => {
         </div>
       </div>
       <div className="bg-[#FAFAFA] py-10 md:py-20">
-        <div className="container mx-auto max-w-6xl px-4 flex items-center justify-center flex-col">
+        <div className="container mx-auto max-w-7xl px-4 flex items-center justify-center flex-col">
           <div className="text-center mb-12">
             <div className="text-[#F9C241] font-bold text-[18px] mb-2 mt-10 block text-center">Key Benefits</div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#466A5E]">Why Choose DSNL?</h2>
@@ -179,7 +199,7 @@ const VirtualProPlatform: React.FC = () => {
         </div>
       </div>
       <div className="bg-white py-16">
-        <div className="container mx-auto max-w-6xl px-4">
+        <div className="container mx-auto max-w-7xl px-4">
           <div className="text-center mb-12">
             <span className="text-[#F9C241] font-bold text-[18px] mb-4 block">Our Updates</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#466A5E] max-w-3xl mx-auto">
@@ -194,6 +214,8 @@ const VirtualProPlatform: React.FC = () => {
                   <div className="relative aspect-[2/1] bg-slate-900 overflow-hidden">
                     <Image
                       src={post.image}
+                      width={3608}
+                      height={240}
                       alt={post.title}
                       className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-200"
                     />

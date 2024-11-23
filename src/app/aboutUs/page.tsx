@@ -14,8 +14,8 @@ const AboutUs: React.FC = () => {
             <div className="container mx-auto max-w-7xl py-10">
                 <Navbar bg={"bg-[#FAFAFA]"} />
             </div>
-            <div className="bg-[#FAFAFA]">
-                <div className="container mx-auto max-w-7xl">
+            <div className="bg-white ">
+                <div className="container mx-auto max-w-7xl bg-[#FAFAFA] rounded-[24px]">
                     <div className=" p-8">
                         <div className="text-[26px] md:text-[36px] font-bold text-[#466A5E] text-center mb-6">
                             Our Story
