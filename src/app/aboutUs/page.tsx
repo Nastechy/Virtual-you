@@ -1,8 +1,8 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navBar";
-import ServicesSection from "@/components/services";
+import { TeamMemberCard } from "@/components/teamMembers";
 import { CardContent } from "@/components/ui/card";
-import { aboutus } from "@/data/mappings";
+import { aboutus, servicesData, teamMembers } from "@/data/mappings";
 import Image from "next/image";
 
 
@@ -93,9 +93,51 @@ const AboutUs: React.FC = () => {
                     </div>
                 </section>
             </div>
-            <div>
-                <ServicesSection />
+            <div className="bg-[#FAFAFA]">
+                <div className="max-w-7xl mx-auto px-4 py-10 md:py-16">
+                    <div className="flex items-center justify-center">
+                        <h2 className="text-2xl md:text-3xl font-semibold text-[#466A5E] mb-4 md:mb-8">
+                            {servicesData.title}
+                        </h2>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start mt-0 md:mt-4">
+                        <div className="relative bg-gray-100 rounded-[20px] overflow-hidden" >
+                            <Image
+                                src="/laptoplady.png"
+                                width={637}
+                                height={542}
+                                alt="Person using VirtualYou platform"
+                            />
+                        </div>
+                        <div className="space-y-6 ">
+                            {servicesData.services.map((service, index) => (
+                                <div key={index}>
+                                    <h3 className="font-semibold text-[20px] text-base mb-1 text-[#333333]">{service.title}</h3>
+                                    <p className="text-[16px] font-[400] leading-relaxed text-[#333333]">{service.description}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div>
+                <section className="container mx-auto px-4 py-24">
+                    <div className="mb-16 text-center">
+                        <h2 className="text-sm font-semibold uppercase tracking-wide text-primary">
+                            Meet The Team
+                        </h2>
+                        <h3 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
+                            Our leadership team
+                        </h3>
+                    </div>
+                    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                        {teamMembers.map((member) => (
+                            <TeamMemberCard key={member.id} member={member} />
+                        ))}
+                    </div>
+                </section>
+            </div>
+
             <div className='px-4 py-5'>
                 <Footer />
             </div>

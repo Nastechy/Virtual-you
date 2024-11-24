@@ -1,9 +1,10 @@
 'use client'
 
 import React, { useEffect } from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'; 
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import { Input } from './ui/input';
 import { Button } from './ui/button';
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -13,22 +14,28 @@ const Footer: React.FC = () => {
     if (yearParagraph) {
       yearParagraph.textContent = `VirtualYou Platform © ${currentYear}. All rights reserved.`;
     }
-  }, [currentYear]); 
+  }, [currentYear]);
 
   return (
-    <footer className="bg-[#466A5E] p-8 rounded-[20px]">
+    <footer className="bg-[#466A5E] py-14 rounded-[20px]">
       <div className="container mx-auto max-w-7xl">
-        <div className="flex flex-col md:flex-row justify-between mb-8">
+        <div className="flex flex-col  md:flex-row justify-between mb-8">
           <div className="mb-6 md:mb-0">
-            <h2 className="text-white text-xl font-semibold mb-4">VirtualYou Platform</h2>
-          </div>
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
+            <Image
+              src="/textlogo.png"
+              alt="pen"
+              width={564}
+              height={102}
+            />          </div>
+          <div className="relative w-[35%]">
             <Input
               type="email"
               placeholder="Enter your email to get the latest from us"
-              className="bg-white text-emerald-800 placeholder:text-gray-500 w-full md:w-64"
+              className="w-full pr-32 h-12 rounded-full bg-white text-gray-800 placeholder:text-gray-500 focus-visible:ring-emerald-600"
             />
-            <Button className="bg-emerald-700 hover:bg-emerald-600 text-white w-full md:w-auto">
+            <Button
+              className="absolute right-1 top-1 h-10 px-6 rounded-full bg-[#466A5E] hover:bg-[#FAC241] text-white font-medium"
+            >
               Subscribe
             </Button>
           </div>
@@ -36,9 +43,9 @@ const Footer: React.FC = () => {
         <div className='border-b mb-8 border-white/60'></div>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-8">
           <p className="text-gray-200 text-sm leading-relaxed max-w-lg">
-            Our team helps buyers find the perfect 
-            home and sellers get the best value for 
-            their property. From expert advice to smooth 
+            Our team helps buyers find the perfect
+            home and sellers get the best value for
+            their property. From expert advice to smooth
             negotiations, we&apos;re with you every step of the way.
           </p>
           <div>

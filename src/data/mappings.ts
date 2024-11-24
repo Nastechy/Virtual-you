@@ -23,6 +23,18 @@ export interface Benefit {
   title: string;
   icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   description: string;
+
+
+}
+
+export interface TeamMember {
+  id: string
+  firstName: string
+  lastName: string
+  role: string
+  avatarUrl: string
+  gradientFrom: string
+  gradientTo: string
 }
 
 export const quickActions: QuickAction[] = [
@@ -148,3 +160,68 @@ export const aboutus = [
     content: ["Innovation", "Collaboration", "Integrity", "Excellence"]
   }
 ]
+
+
+export const servicesData = {
+  title: "What we do",
+  services: [
+    {
+      title: "Digital Services Infrastructure",
+      description: "Customizable platforms, seamless legacy integration, and scalable solutions to support digital transformation.Customizable platforms, seamless legacy integration, and scalable solutions to support digital transformation."
+    },
+    {
+      title: "Cloud-Based Applications",
+      description: "Tailored tools for businesses, governments, and individuals, enabling automation, governance enhancement, and simplified access to services.Tailored tools for businesses, governments, and individuals, enabling automation, governance enhancement, and simplified access to services."
+    },
+    {
+      title: "Data Analytics and Insights",
+      description: "Real-time insights, predictive modeling for trends, and custom reporting for organizational goals.Real-time insights, predictive modeling for trends, and custom reporting for organizational goals."
+    },
+    {
+      title: "Seamless User-Centric Solutions:",
+      description: "Empowering businesses and individuals with tools that simplify operations and enhance decision-making.Empowering businesses and individuals with tools that simplify operations and enhance decision-making."
+    }
+  ]
+};
+
+
+
+export const teamMembers: TeamMember[] = [
+  {
+    id: '1',
+    firstName: 'Prosper',
+    lastName: 'Emma',
+    role: 'Back Developer',
+    avatarUrl: '/male1.png?height=400&width=400',
+    gradientFrom: '#4ADE80',
+    gradientTo: '#8B5CF6',
+  },
+  {
+    id: '2',
+    firstName: 'Florish',
+    lastName: 'Moses',
+    role: 'Frontend Developer',
+    avatarUrl: '/female1.png?height=400&width=400',
+    gradientFrom: '#60A5FA',
+    gradientTo: '#DB2777',
+  },
+  {
+    id: '3',
+    firstName: 'Obadiah',
+    lastName: 'Okoh',
+    role: 'Digital Marketer',
+    avatarUrl: '/male2.png?height=400&width=400',
+    gradientFrom: '#F472B6',
+    gradientTo: '#9333EA',
+  },
+  {
+    id: '4',
+    firstName: 'Happiness',
+    lastName: 'Joe',
+    role: 'Product Manager',
+    avatarUrl: '/female2.png?height=400&width=400',
+    gradientFrom: '#F43F5E',
+    gradientTo: '#7C3AED',
+  },
+]
+

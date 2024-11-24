@@ -40,19 +40,18 @@ const Navbar: React.FC<NavbarProps> = ({ bg }) => {
                 <Link href="/aboutUs" passHref>
                     <div className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">About Us</div>
                 </Link>
-                <Link href="/" passHref>
+                <Link href="/ourService" passHref>
                     <div className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Our Services</div>
                 </Link>
-                <Link href="/contactUs" passHref>
-                    <div className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Contact Us</div>
-                </Link>
+
                 <Link href="/" passHref>
                     <div className="text-[#333333] hover:text-[#466A5E] font-[500] hover:font-bold">Newsletter</div>
                 </Link>
-                <Button className="bg-[#FAC241] hover:bg-yellow-500 font-[600] text-[#333333] text-[16px] md:ml-4 sm:ml-0 rounded-[24px]">
-                    Sign in
-                </Button>
+
             </div>
+            <Button className="bg-[#FAC241] hover:bg-yellow-500 font-[600] text-[#333333] text-[16px] md:ml-4 sm:ml-0 rounded-[24px]">
+                Sign in
+            </Button>
         </div>
     );
 }
