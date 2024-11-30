@@ -1,8 +1,8 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navBar";
-import { TeamMemberCard } from "@/components/teamMembers";
+// import { TeamMemberCard } from "@/components/teamMembers";
 import { CardContent } from "@/components/ui/card";
-import { aboutus, servicesData, teamMembers } from "@/data/mappings";
+import { aboutus, servicesData } from "@/data/mappings";
 import Image from "next/image";
 
 
@@ -94,7 +94,7 @@ const AboutUs: React.FC = () => {
                 </section>
             </div>
             <div className="bg-[#FAFAFA]">
-                <div className="max-w-7xl mx-auto px-4 py-10 md:py-16">
+                <div className="max-w-7xl mx-auto px-4 py-10 md:py-20">
                     <div className="flex items-center justify-center">
                         <h2 className="text-2xl md:text-3xl font-semibold text-[#466A5E] mb-4 md:mb-8">
                             {servicesData.title}
@@ -103,13 +103,13 @@ const AboutUs: React.FC = () => {
                     <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start mt-0 md:mt-4">
                         <div className="relative bg-gray-100 rounded-[20px] overflow-hidden" >
                             <Image
-                                src="/laptoplady.png"
-                                width={637}
-                                height={542}
+                                src="/pitoval.png"
+                                width={594}
+                                height={478}
                                 alt="Person using VirtualYou platform"
                             />
                         </div>
-                        <div className="space-y-6 ">
+                        <div className="space-y-6 mt-3">
                             {servicesData.services.map((service, index) => (
                                 <div key={index}>
                                     <h3 className="font-semibold text-[20px] text-base mb-1 text-[#333333]">{service.title}</h3>
@@ -120,7 +120,7 @@ const AboutUs: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            {/* <div>
                 <section className="container mx-auto px-4 py-24">
                     <div className="mb-16 text-center">
                         <h2 className="text-sm font-semibold uppercase tracking-wide text-primary">
@@ -136,8 +136,7 @@ const AboutUs: React.FC = () => {
                         ))}
                     </div>
                 </section>
-            </div>
-
+            </div> */}
             <div className='px-4 py-5'>
                 <Footer />
             </div>
