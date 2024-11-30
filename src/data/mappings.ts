@@ -167,11 +167,11 @@ export const servicesData = {
   services: [
     {
       title: "Digital Services Infrastructure",
-      description: "Customizable platforms, seamless legacy integration, and scalable solutions to support digital transformation.Customizable platforms, seamless legacy integration, and scalable solutions to support digital transformation."
+      description: "Customizable platforms, seamless legacy integration, and scalable solutions to support digital transformation.Customizable platforms, seamless legacy integration."
     },
     {
       title: "Cloud-Based Applications",
-      description: "Tailored tools for businesses, governments, and individuals, enabling automation, governance enhancement, and simplified access to services.Tailored tools for businesses, governments, and individuals, enabling automation, governance enhancement, and simplified access to services."
+      description: "Tailored tools for businesses, governments, and individuals, enabling automation, governance enhancement, and simplified access to services.Tailored tools for businesses, governments, and individuals."
     },
     {
       title: "Data Analytics and Insights",
@@ -179,7 +179,7 @@ export const servicesData = {
     },
     {
       title: "Seamless User-Centric Solutions:",
-      description: "Empowering businesses and individuals with tools that simplify operations and enhance decision-making.Empowering businesses and individuals with tools that simplify operations and enhance decision-making."
+      description: "Empowering businesses and individuals with tools that simplify operations and enhance decision-making.Empowering businesses and individuals with."
     }
   ]
 };
