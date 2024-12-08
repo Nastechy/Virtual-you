@@ -74,12 +74,11 @@ export const services: Service[] = [
     ]
   },
   {
-    title: "Data Analytics and Insights",
-    description: "Harness the power of data with our comprehensive analytics solutions:",
+    title: "Digital Transformation Projects",
+    description: "Partner with us to revolutionize how you operate:",
     features: [
-      "Real-Time Insights: Empower decisions with accurate, up-to-date analytics and trends.",
-      "Predictive Modeling: Anticipate future trends and plan strategies for effectiveness.",
-      "Custom Reporting: Receive insights tailored specifically to your organizational objectives."
+      "System Overhauls: Transform traditional workflows into optimized, digital processes.",
+      'Innovative Tools Development: Bespoke digital solutions to meet specific social needs.'
     ]
   }
 ];

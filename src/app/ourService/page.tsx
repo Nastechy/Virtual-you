@@ -1,3 +1,4 @@
+import Footer from '@/components/footer'
 import Navbar from '@/components/navBar'
 import ServicesSection from '@/components/services'
 import React from 'react'
@@ -11,7 +12,9 @@ const page = () => {
             <div>
                 <ServicesSection />
             </div>
-
+            <div className='px-4 bg-[#FAFAFA]'>
+                <Footer />
+            </div>
         </div>
     )
 }

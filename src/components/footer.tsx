@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
   }, [currentYear]);
 
   return (
-    <footer className="bg-[#466A5E] py-14 rounded-[20px]">
+    <footer className="bg-[#466A5E] py-8 md:py-14 px-6 md:px-0 rounded-[20px]">
       <div className="container mx-auto max-w-7xl">
         <div className="flex flex-col  md:flex-row justify-between mb-8">
           <div className="mb-6 md:mb-0">
@@ -26,12 +26,13 @@ const Footer: React.FC = () => {
               alt="pen"
               width={564}
               height={102}
-            />          </div>
-          <div className="relative w-[35%]">
+            />
+          </div>
+          <div className="relative flex flex-row w-full sm:w-[35%]">
             <Input
               type="email"
               placeholder="Enter your email to get the latest from us"
-              className="w-full pr-32 h-12 rounded-full bg-white text-gray-800 placeholder:text-gray-500 focus-visible:ring-emerald-600"
+              className="w-full pr-16 sm:pr-32 h-12 rounded-full bg-white text-gray-800 placeholder:text-gray-500 focus-visible:ring-emerald-600"
             />
             <Button
               className="absolute right-1 top-1 h-10 px-6 rounded-full bg-[#466A5E] hover:bg-[#FAC241] text-white font-medium"
@@ -41,12 +42,13 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className='border-b mb-8 border-white/60'></div>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-10 mb-8">
           <p className="text-gray-200 text-sm leading-relaxed max-w-lg">
-            Our team helps buyers find the perfect
-            home and sellers get the best value for
-            their property. From expert advice to smooth
-            negotiations, we&apos;re with you every step of the way.
+            To support government institutions,
+            multinational organizations, private companies
+            and individuals to transition to
+            a digital economy.
+
           </p>
           <div>
             <h3 className="text-gray-200 text-sm font-semibold mb-4">COMPANY</h3>
@@ -70,7 +72,7 @@ const Footer: React.FC = () => {
             <h3 className="text-gray-200 text-sm font-semibold mb-4">CONTACT US</h3>
             <ul className="space-y-2">
               <li className="text-gray-300 text-sm">+234 900 000 0000</li>
-              <li className="text-gray-300 text-sm break-all">customerservice@virtualyouplatform.com</li>
+              <li className="text-gray-300 text-sm break-all">info@datastarkey.com</li>
             </ul>
           </div>
           <div>

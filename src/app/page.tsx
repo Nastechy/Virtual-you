@@ -147,7 +147,7 @@ const VirtualProPlatform: React.FC = () => {
                 width={637}
                 height={542}
                 alt="Person using VirtualYou platform"
-                />
+              />
             </div>
 
             <div className="space-y-6">
@@ -164,7 +164,7 @@ const VirtualProPlatform: React.FC = () => {
                 </div>
               ))}
               <Button size='lg' className="bg-[#FAC241] hover:bg-yellow-500 font-[600] text-[16px] text-[#333333]">
-                Get Started
+                Learn More
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
