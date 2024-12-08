@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import { Button } from './ui/button';
+// import { Button } from './ui/button';
 import { X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -49,9 +49,10 @@ const Navbar: React.FC<NavbarProps> = ({ bg }) => {
                 </Link>
 
             </div>
-            <Button className="bg-[#FAC241] hover:bg-yellow-500 font-[600] text-[#333333] text-[16px] md:ml-4 sm:ml-0 rounded-[24px]">
+            <div></div>
+            {/* <Button className="bg-[#FAC241] hover:bg-yellow-500 font-[600] text-[#333333] text-[16px] md:ml-4 sm:ml-0 rounded-[24px]">
                 Sign in
-            </Button>
+            </Button> */}
         </div>
     );
 }
