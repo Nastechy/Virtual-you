@@ -186,7 +186,7 @@ const VirtualProPlatform: React.FC = () => {
                       <benefit.icon className="w-14 h-14 text-[#466A5E]" strokeWidth={1.5} />
                     </div>
                   </div>
-                  <h3 className="text-xl mb-2 font-semibold text-[#466A5E]mb-4">{benefit.title}</h3>
+                  <h3 className="text-xl mb-2 font-semibold text-[#466A5E] ">{benefit.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
                 </CardContent>
               </Card>
@@ -214,7 +214,7 @@ const VirtualProPlatform: React.FC = () => {
                   <div className="relative aspect-[2/1] bg-slate-900 overflow-hidden">
                     <Image
                       src={post.image}
-                      width={3608}
+                      width={368}
                       height={240}
                       alt={post.title}
                       className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-200"

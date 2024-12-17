@@ -103,41 +103,42 @@ export const processSteps: ProcessStep[] = [
 
 export const benefits: Benefit[] = [
   {
-    title: "Convenience",
+    title: "Convenience at Your Fingertips",
     icon: Search,
-    description: "Our team helps buyers find the perfect home and sellers get the best value for their property. From expert advice to smooth negotiations, we're with you every step of the way."
+    description: 'Seamlessly access digital solutions anytime, anywhere, with intuitive platforms designed to simplify your processes and enhance your experience.'
   },
   {
-    title: "Security",
+    title: "Unwavering Security",
     icon: Shield,
-    description: "Our team helps buyers find the perfect home and sellers get the best value for their property. From expert advice to smooth negotiations, we're with you every step of the way."
+    description:  'Your data is protected with cutting-edge encryption and compliance with global standards, ensuring trust and peace of mind in every interaction.'
   },
   {
-    title: "Efficiency",
+    title: "Optimized Efficiency",
     icon: Settings,
-    description: "Our team helps buyers find the perfect home and sellers get the best value for their property. From expert advice to smooth negotiations, we're with you every step of the way."
+    description:'Maximize productivity with streamlined tools and responsive support that deliver faster results for businesses, governments, and individuals alike.'
+
   }
 ];
 
 
 export const posts = [
   {
-    title: "Digital Transformation in Government Services",
+    title: "Digital Transformation in Government ",
     description: "Explore how modern UI frameworks and cloud technologies are revolutionizing public sector digital services. From user authentication to secure data management.",
     date: "22 Nov 2024",
-    image: "/infoImage.png?height=200&width=400"
+    image: "/Rectangle1.png?height=200&width=400"
   },
   {
     title: "Securing Digital Identity Management",
     description: "Discover the latest approaches to digital identity verification and management. Learn about biometric integration and blockchain-based security solutions.",
     date: "22 Nov 2024",
-    image: "/infoImage.png?height=200&width=400"
+    image: "/Rectangle2.png?height=200&width=400"
   },
   {
     title: "The Future of Government Tech Stack",
     description: "An in-depth look at the technology stack powering next-generation government services. From cloud infrastructure to frontend frameworks.",
     date: "22 Nov 2024",
-    image: "/infoImage.png?height=200&width=400"
+    image: "/Rectangle3.png?height=200&width=400"
   }
 ];
 
@@ -146,17 +147,17 @@ export const aboutus = [
   {
     title: "Our Mission",
     icon: "/cone.png?height=80&width=80",
-    content: "To support governments, multinational organizations, and individuals in Nigeria and Africa in transitioning to a digital economy."
+    content: 'To support governments, multinational organizations, and individuals in Nigeria and other developing nations to transition to a digital economy.'
   },
   {
     title: "Our Vision",
     icon: "/target.png?height=80&width=80",
-    content: "To establish ourselves as the first African company to deliver select digital services on a global scale."
+    content: 'To redefine Africa’s digital economy by providing innovative, practical solutions to real problems in connecting businesses, governments, and people to global opportunities.'
   },
   {
     title: "Our Core Values",
     icon: "/hands.png?height=80&width=80",
-    content: ["Innovation", "Collaboration", "Integrity", "Excellence"]
+    content: 'We deliver excellence by prioritizing innovation and collaboration, offering digital solutions that empower businesses, governments, and individuals.'
   }
 ]
 
@@ -166,19 +167,19 @@ export const servicesData = {
   services: [
     {
       title: "Digital Services Infrastructure",
-      description: "Customizable platforms, seamless legacy integration, and scalable solutions to support digital transformation.Customizable platforms, seamless legacy integration."
+      description: "Customizable platforms, seamless legacy integration, and scalable solutions to support digital transformation."
     },
     {
       title: "Cloud-Based Applications",
-      description: "Tailored tools for businesses, governments, and individuals, enabling automation, governance enhancement, and simplified access to services.Tailored tools for businesses, governments, and individuals."
+      description: "Tailored tools for businesses, governments, and individuals, enabling automation, governance enhancement, and simplified access to services."
     },
     {
       title: "Data Analytics and Insights",
-      description: "Real-time insights, predictive modeling for trends, and custom reporting for organizational goals.Real-time insights, predictive modeling for trends, and custom reporting for organizational goals."
+      description: "Real-time insights, predictive modeling for trends, and custom reporting for organizational goals."
     },
     {
-      title: "Seamless User-Centric Solutions:",
-      description: "Empowering businesses and individuals with tools that simplify operations and enhance decision-making.Empowering businesses and individuals with."
+      title: "Digital Transformation Projects",
+      description: "Empowering businesses and individuals with tools that simplify operations and enhance decision-making."
     }
   ]
 };

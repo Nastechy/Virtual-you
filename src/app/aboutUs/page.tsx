@@ -109,7 +109,7 @@ const AboutUs: React.FC = () => {
                                 alt="Person using VirtualYou platform"
                             />
                         </div>
-                        <div className="space-y-6 mt-3">
+                        <div className="space-y-8 mt-8">
                             {servicesData.services.map((service, index) => (
                                 <div key={index}>
                                     <h3 className="font-semibold text-[20px] text-base mb-1 text-[#333333]">{service.title}</h3>
